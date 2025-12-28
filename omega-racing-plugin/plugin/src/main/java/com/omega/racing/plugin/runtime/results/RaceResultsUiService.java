@@ -76,9 +76,10 @@ public final class RaceResultsUiService {
         holder.setInventory(inv);
 
         // Nav buttons
-        inv.setItem(45, navItem(Material.ARROW, ChatColor.YELLOW + "Prev", RaceResultsKeys.ACTION_PREV));
-        inv.setItem(49, navItem(Material.BARRIER, ChatColor.RED + "Close", RaceResultsKeys.ACTION_CLOSE));
-        inv.setItem(53, navItem(Material.ARROW, ChatColor.YELLOW + "Next", RaceResultsKeys.ACTION_NEXT));
+        // Standard layout: bottom row, centered prev/next with one-slot gap between.
+        inv.setItem(45, navItem(Material.BARRIER, ChatColor.RED + "Close", RaceResultsKeys.ACTION_CLOSE));
+        inv.setItem(48, navItem(Material.ARROW, ChatColor.YELLOW + "Prev", RaceResultsKeys.ACTION_PREV));
+        inv.setItem(50, navItem(Material.ARROW, ChatColor.YELLOW + "Next", RaceResultsKeys.ACTION_NEXT));
 
         Map<String, RaceStageState.FreePracticeRacerProgress> freePractice = loadFreePracticeResults(stageType, raceName);
 
