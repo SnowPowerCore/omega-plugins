@@ -1,0 +1,227 @@
+[
+  {
+    "id": "racing_main",
+    "type": "CHEST",
+    "size": 36,
+    "name": "&bRace Editor",
+    "items": [
+      {"slot": 10, "referenceId": "racing:ui/rename_race"},
+      {"slot": 12, "referenceId": "racing:ui/open_sections"},
+      {"slot": 14, "referenceId": "racing:ui/open_positions"},
+
+      {"slot": 19, "referenceId": "racing:ui/open_teams"},
+      {"slot": 21, "referenceId": "racing:ui/open_qualification_settings"},
+      {"slot": 23, "referenceId": "racing:ui/open_race_laps_direct"},
+      {"slot": 25, "referenceId": "racing:ui/open_free_practice"}
+    ]
+  },
+  {
+    "id": "racing_qualification_settings",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&bQualification",
+    "items": [
+      {"slot": 12, "referenceId": "racing:ui/open_qualification_laps"},
+      {"slot": 14, "referenceId": "racing:ui/open_qualification_time_limit"},
+      {"slot": 26, "referenceId": "racing:ui/back"}
+    ]
+  },
+  {
+    "id": "racing_free_practice_settings",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&bFree Practice",
+    "items": [
+      {"slot": 13, "referenceId": "racing:ui/open_free_practice_time_limit"},
+      {"slot": 26, "referenceId": "racing:ui/back"}
+    ]
+  },
+  {
+    "id": "racing_sections",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&bSections",
+    "items": [
+      {"slot": 10, "referenceId": "racing:ui/rounds_add_10"},
+      {"slot": 11, "referenceId": "racing:ui/rounds_add_1"},
+      {"slot": 13, "referenceId": "racing:ui/number_adjust_current"},
+      {"slot": 15, "referenceId": "racing:ui/rounds_sub_1"},
+      {"slot": 16, "referenceId": "racing:ui/rounds_sub_10"},
+      {"slot": 26, "referenceId": "racing:ui/number_adjust_cancel"}
+    ]
+  },
+  {
+    "id": "racing_positions",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&bPositions",
+    "items": [
+      {"slot": 10, "referenceId": "racing:ui/rounds_add_10"},
+      {"slot": 11, "referenceId": "racing:ui/rounds_add_1"},
+      {"slot": 13, "referenceId": "racing:ui/number_adjust_current"},
+      {"slot": 15, "referenceId": "racing:ui/rounds_sub_1"},
+      {"slot": 16, "referenceId": "racing:ui/rounds_sub_10"},
+      {"slot": 26, "referenceId": "racing:ui/number_adjust_cancel"}
+    ]
+  },
+  {
+    "id": "racing_qualification_laps",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&bQualification Laps",
+    "items": [
+      {"slot": 10, "referenceId": "racing:ui/rounds_add_10"},
+      {"slot": 11, "referenceId": "racing:ui/rounds_add_1"},
+      {"slot": 13, "referenceId": "racing:ui/number_adjust_current"},
+      {"slot": 15, "referenceId": "racing:ui/rounds_sub_1"},
+      {"slot": 16, "referenceId": "racing:ui/rounds_sub_10"},
+      {"slot": 26, "referenceId": "racing:ui/number_adjust_cancel"}
+    ]
+  },
+  {
+    "id": "racing_race_laps",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&bRace Laps",
+    "items": [
+      {"slot": 10, "referenceId": "racing:ui/rounds_add_10"},
+      {"slot": 11, "referenceId": "racing:ui/rounds_add_1"},
+      {"slot": 13, "referenceId": "racing:ui/number_adjust_current"},
+      {"slot": 15, "referenceId": "racing:ui/rounds_sub_1"},
+      {"slot": 16, "referenceId": "racing:ui/rounds_sub_10"},
+      {"slot": 26, "referenceId": "racing:ui/number_adjust_cancel"}
+    ]
+  },
+  {
+    "id": "racing_free_practice_time_limit",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&bFree Practice Time Limit",
+    "items": [
+      {"slot": 10, "referenceId": "racing:ui/time_sub_300"},
+      {"slot": 11, "referenceId": "racing:ui/time_sub_60"},
+      {"slot": 12, "referenceId": "racing:ui/time_sub_10"},
+      {"slot": 13, "referenceId": "racing:ui/time_adjust_current"},
+      {"slot": 14, "referenceId": "racing:ui/time_add_10"},
+      {"slot": 15, "referenceId": "racing:ui/time_add_60"},
+      {"slot": 16, "referenceId": "racing:ui/time_add_300"},
+      {"slot": 26, "referenceId": "racing:ui/number_adjust_cancel"}
+    ]
+  },
+  {
+    "id": "racing_qualification_time_limit",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&bQualification Time Limit",
+    "items": [
+      {"slot": 10, "referenceId": "racing:ui/time_sub_300"},
+      {"slot": 11, "referenceId": "racing:ui/time_sub_60"},
+      {"slot": 12, "referenceId": "racing:ui/time_sub_10"},
+      {"slot": 13, "referenceId": "racing:ui/time_adjust_current"},
+      {"slot": 14, "referenceId": "racing:ui/time_add_10"},
+      {"slot": 15, "referenceId": "racing:ui/time_add_60"},
+      {"slot": 16, "referenceId": "racing:ui/time_add_300"},
+      {"slot": 26, "referenceId": "racing:ui/number_adjust_cancel"}
+    ]
+  },
+  {
+    "id": "racing_teams",
+    "type": "CHEST",
+    "size": 54,
+    "name": "&bTeams",
+    "items": [
+      {"slot": 45, "referenceId": "racing:ui/back"},
+      {"slot": 46, "referenceId": "racing:ui/add_team"},
+      {"slot": 48, "referenceId": "racing:ui/teams_page_prev"},
+      {"slot": 50, "referenceId": "racing:ui/teams_page_next"}
+    ]
+  },
+  {
+    "id": "racing_team_edit",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&bTeam Editor",
+    "items": [
+      {"slot": 4, "referenceId": "racing:ui/team_info"},
+      {"slot": 10, "referenceId": "racing:ui/rename_team"},
+      {"slot": 12, "referenceId": "racing:ui/add_racer"},
+      {"slot": 14, "referenceId": "racing:ui/remove_racer"},
+      {"slot": 16, "referenceId": "racing:ui/open_suit_colors"},
+      {"slot": 18, "referenceId": "racing:ui/back"},
+      {"slot": 20, "referenceId": "racing:ui/remove_team"},
+      {"slot": 24, "referenceId": "racing:ui/open_racers"}
+    ]
+  },
+  {
+    "id": "racing_racers",
+    "type": "CHEST",
+    "size": 54,
+    "name": "&bRacers",
+    "items": [
+      {"slot": 45, "referenceId": "racing:ui/player_selection_cancel"},
+      {"slot": 48, "referenceId": "racing:ui/page_prev"},
+      {"slot": 50, "referenceId": "racing:ui/page_next"}
+    ]
+  },
+  {
+    "id": "racing_remove_racer",
+    "type": "CHEST",
+    "size": 54,
+    "name": "&bRemove Racer",
+    "items": [
+      {"slot": 45, "referenceId": "racing:ui/player_selection_cancel"},
+      {"slot": 48, "referenceId": "racing:ui/page_prev"},
+      {"slot": 50, "referenceId": "racing:ui/page_next"}
+    ]
+  },
+  {
+    "id": "racing_suit_colors",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&bSuit Colors",
+    "items": [
+      {"slot": 0, "referenceId": "racing:ui/suit_color_white"},
+      {"slot": 1, "referenceId": "racing:ui/suit_color_orange"},
+      {"slot": 2, "referenceId": "racing:ui/suit_color_magenta"},
+      {"slot": 3, "referenceId": "racing:ui/suit_color_light_blue"},
+      {"slot": 4, "referenceId": "racing:ui/suit_color_yellow"},
+      {"slot": 5, "referenceId": "racing:ui/suit_color_lime"},
+      {"slot": 6, "referenceId": "racing:ui/suit_color_pink"},
+      {"slot": 7, "referenceId": "racing:ui/suit_color_gray"},
+
+      {"slot": 9, "referenceId": "racing:ui/suit_color_light_gray"},
+      {"slot": 10, "referenceId": "racing:ui/suit_color_cyan"},
+      {"slot": 11, "referenceId": "racing:ui/suit_color_purple"},
+      {"slot": 12, "referenceId": "racing:ui/suit_color_blue"},
+      {"slot": 13, "referenceId": "racing:ui/suit_color_brown"},
+      {"slot": 14, "referenceId": "racing:ui/suit_color_green"},
+      {"slot": 15, "referenceId": "racing:ui/suit_color_red"},
+      {"slot": 16, "referenceId": "racing:ui/suit_color_black"},
+
+      {"slot": 26, "referenceId": "racing:ui/back"}
+    ]
+  },
+  {
+    "id": "racing_add_racer",
+    "type": "CHEST",
+    "size": 54,
+    "name": "&bAdd Racer",
+    "items": [
+      {"slot": 45, "referenceId": "racing:ui/player_selection_cancel"},
+      {"slot": 48, "referenceId": "racing:ui/picker_prev"},
+      {"slot": 50, "referenceId": "racing:ui/picker_next"}
+    ]
+  },
+  {
+    "id": "racing_confirm",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&cConfirm",
+    "items": [
+      {"slot": 11, "referenceId": "racing:ui/confirm_accept"},
+      {"slot": 13, "referenceId": "racing:ui/confirm_info"},
+      {"slot": 15, "referenceId": "racing:ui/confirm_cancel"},
+      {"slot": 18, "referenceId": "racing:ui/confirm_back"}
+    ]
+  }
+]

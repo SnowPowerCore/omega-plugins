@@ -1,0 +1,500 @@
+[
+  {
+    "id": "racing_ui_back",
+    "referenceId": "racing:ui/back",
+    "material": "ARROW",
+    "name": "&cBack",
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingBackAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_team_info",
+    "referenceId": "racing:ui/team_info",
+    "material": "PAPER",
+    "name": "&bTeam"
+  },
+  {
+    "id": "racing_ui_number_adjust_current",
+    "referenceId": "racing:ui/number_adjust_current",
+    "material": "PAPER",
+    "name": "&eCurrent: &f0"
+  },
+  {
+    "id": "racing_ui_confirm_info",
+    "referenceId": "racing:ui/confirm_info",
+    "material": "PAPER",
+    "name": "&cConfirm"
+  },
+  {
+    "id": "racing_ui_confirm_back",
+    "referenceId": "racing:ui/confirm_back",
+    "material": "ARROW",
+    "name": "&cBack",
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingConfirmCancelAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_confirm_accept",
+    "referenceId": "racing:ui/confirm_accept",
+    "material": "LIME_WOOL",
+    "name": "&aAccept",
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingConfirmAcceptAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_confirm_cancel",
+    "referenceId": "racing:ui/confirm_cancel",
+    "material": "RED_WOOL",
+    "name": "&cCancel",
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingConfirmCancelAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_rename_race",
+    "referenceId": "racing:ui/rename_race",
+    "material": "NAME_TAG",
+    "name": "&eRename Race",
+    "lore": ["&7Click then type in chat"],
+    "additionalInfo": {"promptKind": "RENAME_RACE"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingPromptAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_teams",
+    "referenceId": "racing:ui/open_teams",
+    "material": "PLAYER_HEAD",
+    "name": "&bTeams",
+    "additionalInfo": {"inventoryId": "racing_teams"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenInventoryAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_qualification",
+    "referenceId": "racing:ui/open_qualification",
+    "material": "PAPER",
+    "name": "&eQualification",
+    "additionalInfo": {"inventoryId": "racing_qualification_laps", "successDelegate": "QUALIFICATION_LAPS", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_free_practice",
+    "referenceId": "racing:ui/open_free_practice",
+    "material": "PAPER",
+    "name": "&eFree Practice",
+    "additionalInfo": {"inventoryId": "racing_free_practice_settings"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenInventoryAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_race",
+    "referenceId": "racing:ui/open_race",
+    "material": "PAPER",
+    "name": "&eRace",
+    "additionalInfo": {"inventoryId": "racing_race_laps", "successDelegate": "RACE_LAPS", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_qualification_laps",
+    "referenceId": "racing:ui/open_qualification_laps",
+    "material": "PAPER",
+    "name": "&eLaps",
+    "additionalInfo": {"inventoryId": "racing_qualification_laps", "successDelegate": "QUALIFICATION_LAPS", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_qualification_settings",
+    "referenceId": "racing:ui/open_qualification_settings",
+    "material": "PAPER",
+    "name": "&eQualification",
+    "additionalInfo": {"inventoryId": "racing_qualification_settings"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenInventoryAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_qualification_time_limit",
+    "referenceId": "racing:ui/open_qualification_time_limit",
+    "material": "CLOCK",
+    "name": "&eTime Limit",
+    "additionalInfo": {"inventoryId": "racing_qualification_time_limit", "successDelegate": "QUALIFICATION_TIME_LIMIT", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_sections",
+    "referenceId": "racing:ui/open_sections",
+    "material": "PAPER",
+    "name": "&eSections",
+    "additionalInfo": {"inventoryId": "racing_sections", "successDelegate": "SECTIONS", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_positions",
+    "referenceId": "racing:ui/open_positions",
+    "material": "PAPER",
+    "name": "&ePositions",
+    "additionalInfo": {"inventoryId": "racing_positions", "successDelegate": "POSITIONS", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_race_laps",
+    "referenceId": "racing:ui/open_race_laps",
+    "material": "PAPER",
+    "name": "&eLaps",
+    "additionalInfo": {"inventoryId": "racing_race_laps", "successDelegate": "RACE_LAPS", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_race_laps_direct",
+    "referenceId": "racing:ui/open_race_laps_direct",
+    "material": "PAPER",
+    "name": "&eRace",
+    "additionalInfo": {"inventoryId": "racing_race_laps", "successDelegate": "RACE_LAPS", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_free_practice_time_limit",
+    "referenceId": "racing:ui/open_free_practice_time_limit",
+    "material": "CLOCK",
+    "name": "&eTime Limit",
+    "additionalInfo": {"inventoryId": "racing_free_practice_time_limit", "successDelegate": "FREE_PRACTICE_TIME_LIMIT", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_add_team",
+    "referenceId": "racing:ui/add_team",
+    "material": "SLIME_BALL",
+    "name": "&aAdd Team",
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingAddTeamAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_teams_page_prev",
+    "referenceId": "racing:ui/teams_page_prev",
+    "material": "ARROW",
+    "name": "&ePrev Page",
+    "additionalInfo": {"delta": "-1"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingChangeTeamsPageAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_teams_page_next",
+    "referenceId": "racing:ui/teams_page_next",
+    "material": "ARROW",
+    "name": "&eNext Page",
+    "additionalInfo": {"delta": "1"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingChangeTeamsPageAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_team_button",
+    "referenceId": "racing:ui/team_button",
+    "material": "WHITE_WOOL",
+    "name": "&bTeam",
+    "additionalInfo": {"teamIndex": "0"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingSelectTeamAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_rename_team",
+    "referenceId": "racing:ui/rename_team",
+    "material": "OAK_SIGN",
+    "name": "&eRename Team",
+    "lore": ["&7Click then type in chat"],
+    "additionalInfo": {"promptKind": "RENAME_TEAM"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingPromptAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_add_racer",
+    "referenceId": "racing:ui/add_racer",
+    "material": "LIME_DYE",
+    "name": "&aAdd Racer",
+    "lore": ["&7Click to pick a player"],
+    "additionalInfo": {"inventoryId": "racing_add_racer", "successDelegate": "ADD_RACER", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenPlayerSelectionAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_remove_racer",
+    "referenceId": "racing:ui/remove_racer",
+    "material": "RED_DYE",
+    "name": "&cRemove Racer",
+    "lore": ["&7Click to pick a racer"],
+    "additionalInfo": {"inventoryId": "racing_remove_racer", "successDelegate": "REMOVE_RACER", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenPlayerSelectionAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_remove_team",
+    "referenceId": "racing:ui/remove_team",
+    "material": "BARRIER",
+    "name": "&cRemove Team",
+    "lore": ["&7Removes the current team"],
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingRemoveTeamAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_racers",
+    "referenceId": "racing:ui/open_racers",
+    "material": "PLAYER_HEAD",
+    "name": "&bView Racers",
+    "additionalInfo": {"inventoryId": "racing_racers", "successDelegate": "NOOP", "cancelDelegate": "BACK"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenPlayerSelectionAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_page_prev",
+    "referenceId": "racing:ui/page_prev",
+    "material": "ARROW",
+    "name": "&ePrev Page",
+    "additionalInfo": {"delta": "-1"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingChangeRacerPageAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_page_next",
+    "referenceId": "racing:ui/page_next",
+    "material": "ARROW",
+    "name": "&eNext Page",
+    "additionalInfo": {"delta": "1"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingChangeRacerPageAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_open_suit_colors",
+    "referenceId": "racing:ui/open_suit_colors",
+    "material": "LEATHER_CHESTPLATE",
+    "name": "&bSuit Color",
+    "additionalInfo": {"inventoryId": "racing_suit_colors"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingOpenInventoryAction", "CancelEventAction"]}
+    ]
+  },
+
+  {"id": "racing_ui_suit_white", "referenceId": "racing:ui/suit_color_white", "material": "WHITE_WOOL", "name": "&fWhite", "additionalInfo": {"kind": "SUIT", "hex": "#FFFFFF"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_orange", "referenceId": "racing:ui/suit_color_orange", "material": "ORANGE_WOOL", "name": "&6Orange", "additionalInfo": {"kind": "SUIT", "hex": "#F9801D"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_magenta", "referenceId": "racing:ui/suit_color_magenta", "material": "MAGENTA_WOOL", "name": "&dMagenta", "additionalInfo": {"kind": "SUIT", "hex": "#C74EBD"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_light_blue", "referenceId": "racing:ui/suit_color_light_blue", "material": "LIGHT_BLUE_WOOL", "name": "&bLight Blue", "additionalInfo": {"kind": "SUIT", "hex": "#3AB3DA"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_yellow", "referenceId": "racing:ui/suit_color_yellow", "material": "YELLOW_WOOL", "name": "&eYellow", "additionalInfo": {"kind": "SUIT", "hex": "#FED83D"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_lime", "referenceId": "racing:ui/suit_color_lime", "material": "LIME_WOOL", "name": "&aLime", "additionalInfo": {"kind": "SUIT", "hex": "#80C71F"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_pink", "referenceId": "racing:ui/suit_color_pink", "material": "PINK_WOOL", "name": "&dPink", "additionalInfo": {"kind": "SUIT", "hex": "#F38BAA"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_gray", "referenceId": "racing:ui/suit_color_gray", "material": "GRAY_WOOL", "name": "&7Gray", "additionalInfo": {"kind": "SUIT", "hex": "#474F52"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_light_gray", "referenceId": "racing:ui/suit_color_light_gray", "material": "LIGHT_GRAY_WOOL", "name": "&7Light Gray", "additionalInfo": {"kind": "SUIT", "hex": "#9D9D97"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_cyan", "referenceId": "racing:ui/suit_color_cyan", "material": "CYAN_WOOL", "name": "&3Cyan", "additionalInfo": {"kind": "SUIT", "hex": "#169C9C"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_purple", "referenceId": "racing:ui/suit_color_purple", "material": "PURPLE_WOOL", "name": "&5Purple", "additionalInfo": {"kind": "SUIT", "hex": "#8932B8"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_blue", "referenceId": "racing:ui/suit_color_blue", "material": "BLUE_WOOL", "name": "&9Blue", "additionalInfo": {"kind": "SUIT", "hex": "#3C44AA"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_brown", "referenceId": "racing:ui/suit_color_brown", "material": "BROWN_WOOL", "name": "&6Brown", "additionalInfo": {"kind": "SUIT", "hex": "#835432"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_green", "referenceId": "racing:ui/suit_color_green", "material": "GREEN_WOOL", "name": "&aGreen", "additionalInfo": {"kind": "SUIT", "hex": "#5E7C16"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_red", "referenceId": "racing:ui/suit_color_red", "material": "RED_WOOL", "name": "&cRed", "additionalInfo": {"kind": "SUIT", "hex": "#B02E26"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+  {"id": "racing_ui_suit_black", "referenceId": "racing:ui/suit_color_black", "material": "BLACK_WOOL", "name": "&0Black", "additionalInfo": {"kind": "SUIT", "hex": "#1D1D21"}, "interaction": [{"type": ["INVENTORY", "LEFT"], "actions": ["RacingSetTeamColorAction", "CancelEventAction"]}]},
+
+  {
+    "id": "racing_ui_racer_entry",
+    "referenceId": "racing:ui/racer_entry",
+    "material": "PLAYER_HEAD",
+    "name": "&bRacer",
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_racer_select_entry",
+    "referenceId": "racing:ui/racer_select_entry",
+    "material": "PLAYER_HEAD",
+    "name": "&bRacer",
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingPlayerSelectionSelectAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_racer_remove_entry",
+    "referenceId": "racing:ui/racer_remove_entry",
+    "material": "PLAYER_HEAD",
+    "name": "&bRacer",
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingRemoveRacerFromTeamAction", "CancelEventAction"]}
+    ]
+  },
+
+  {
+    "id": "racing_ui_player_selection_cancel",
+    "referenceId": "racing:ui/player_selection_cancel",
+    "material": "ARROW",
+    "name": "&cBack",
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingPlayerSelectionCancelAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_picker_prev",
+    "referenceId": "racing:ui/picker_prev",
+    "material": "ARROW",
+    "name": "&ePrev Page",
+    "additionalInfo": {"delta": "-1"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingChangePlayerPickerPageAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_picker_next",
+    "referenceId": "racing:ui/picker_next",
+    "material": "ARROW",
+    "name": "&eNext Page",
+    "additionalInfo": {"delta": "1"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingChangePlayerPickerPageAction", "CancelEventAction"]}
+    ]
+  },
+
+  {
+    "id": "racing_ui_time_adjust_current",
+    "referenceId": "racing:ui/time_adjust_current",
+    "material": "PAPER",
+    "name": "&eTime Limit: &f00:00"
+  },
+  {
+    "id": "racing_ui_time_add_10",
+    "referenceId": "racing:ui/time_add_10",
+    "material": "LIME_DYE",
+    "name": "&a+10s",
+    "additionalInfo": {"delta": "10"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_time_add_60",
+    "referenceId": "racing:ui/time_add_60",
+    "material": "LIME_DYE",
+    "name": "&a+1m",
+    "additionalInfo": {"delta": "60"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_time_add_300",
+    "referenceId": "racing:ui/time_add_300",
+    "material": "LIME_DYE",
+    "name": "&a+5m",
+    "additionalInfo": {"delta": "300"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_time_sub_10",
+    "referenceId": "racing:ui/time_sub_10",
+    "material": "RED_DYE",
+    "name": "&c-10s",
+    "additionalInfo": {"delta": "-10"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_time_sub_60",
+    "referenceId": "racing:ui/time_sub_60",
+    "material": "RED_DYE",
+    "name": "&c-1m",
+    "additionalInfo": {"delta": "-60"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_time_sub_300",
+    "referenceId": "racing:ui/time_sub_300",
+    "material": "RED_DYE",
+    "name": "&c-5m",
+    "additionalInfo": {"delta": "-300"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_rounds_add_10",
+    "referenceId": "racing:ui/rounds_add_10",
+    "material": "LIME_DYE",
+    "name": "&a+10",
+    "additionalInfo": {"delta": "10"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_rounds_add_1",
+    "referenceId": "racing:ui/rounds_add_1",
+    "material": "LIME_DYE",
+    "name": "&a+1",
+    "additionalInfo": {"delta": "1"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_rounds_sub_1",
+    "referenceId": "racing:ui/rounds_sub_1",
+    "material": "RED_DYE",
+    "name": "&c-1",
+    "additionalInfo": {"delta": "-1"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_rounds_sub_10",
+    "referenceId": "racing:ui/rounds_sub_10",
+    "material": "RED_DYE",
+    "name": "&c-10",
+    "additionalInfo": {"delta": "-10"},
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustAction", "CancelEventAction"]}
+    ]
+  },
+  {
+    "id": "racing_ui_number_adjust_cancel",
+    "referenceId": "racing:ui/number_adjust_cancel",
+    "material": "ARROW",
+    "name": "&cBack",
+    "interaction": [
+      {"type": ["INVENTORY", "LEFT"], "actions": ["RacingNumberAdjustCancelAction", "CancelEventAction"]}
+    ]
+  }
+]

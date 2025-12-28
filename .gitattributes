@@ -1,0 +1,20 @@
+# Normalize text files
+* text=auto
+
+# Keep shell scripts LF
+*.sh text eol=lf
+
+# Keep Windows batch files CRLF
+*.bat text eol=crlf
+
+# Gradle wrapper scripts
+gradlew text eol=lf
+
+# Treat common binaries as binary
+*.jar binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary

@@ -1,0 +1,325 @@
+[
+  {
+    "id": "example_sword_damageable",
+    "referenceId": "omega:demo/sword",
+    "material": "minecraft:diamond_sword",
+    "amount": 1,
+    "name": "&bExample Sword (Damageable)",
+    "lore": ["&7Demonstrates meta.type=damageable", "&7and additionalInfo PDC storage"],
+    "enchants": {"minecraft:sharpness": 5, "unbreaking": 3},
+    "unbreakable": false,
+    "flags": ["HIDE_ENCHANTS"],
+    "additionalInfo": {"origin": "omega-item-loader", "category": "demo"},
+    "meta": {
+      "type": "damageable",
+      "damage": 12
+    }
+  },
+  {
+    "id": "example_pickaxe_repairable",
+    "referenceId": "omega:demo/pickaxe",
+    "material": "DIAMOND_PICKAXE",
+    "name": "&aExample Pickaxe (Repairable)",
+    "lore": ["&7Demonstrates meta.type=repairable"],
+    "additionalInfo": {"economy": "repair-cost-demo"},
+    "meta": {
+      "type": "repairable",
+      "repairCost": 8
+    }
+  },
+  {
+    "id": "example_book",
+    "referenceId": "omega:welcome_book",
+    "material": "WRITTEN_BOOK",
+    "name": "&dWelcome Book",
+    "meta": {
+      "type": "book",
+      "title": "Welcome",
+      "author": "Omega",
+      "pages": ["&0Page 1\n&7Hello!", "&0Page 2\n&7More text."],
+      "generation": "ORIGINAL"
+    },
+    "additionalInfo": {"category": "tutorial", "glow": true, "interactMessage": "&aHello! You interacted with the welcome book."},
+    "interaction": [
+      {
+        "type": ["RIGHT", "AIR", "MAIN_HAND"],
+        "actions": ["SendMessageAction", "CancelEventAction"]
+      },
+      {
+        "type": ["INVENTORY", "LEFT"],
+        "actions": ["SendMessageAction", "CancelEventAction"]
+      }
+    ]
+  },
+  {
+    "id": "example_enchanted_book",
+    "referenceId": "omega:demo/enchanted_book",
+    "material": "ENCHANTED_BOOK",
+    "name": "&5Enchanted Book (Stored)",
+    "lore": ["&7Demonstrates meta.type=enchantmentstorage"],
+    "meta": {
+      "type": "enchantedbook",
+      "storedEnchants": {
+        "minecraft:sharpness": 4,
+        "minecraft:unbreaking": 3
+      }
+    },
+    "additionalInfo": {"tier": "rare"}
+  },
+  {
+    "id": "example_leather_chestplate",
+    "referenceId": "omega:cosmetic/leather_blue",
+    "material": "LEATHER_CHESTPLATE",
+    "name": "&9Dyed Leather (LeatherArmorMeta)",
+    "lore": ["&7Color can be #RRGGBB or {r,g,b}"],
+    "meta": {
+      "type": "leatherarmor",
+      "color": "#1E90FF"
+    },
+    "additionalInfo": {"style": "blue"}
+  },
+  {
+    "id": "example_trimmed_armor",
+    "referenceId": "omega:cosmetic/trimmed_chestplate",
+    "material": "DIAMOND_CHESTPLATE",
+    "name": "&bTrimmed Armor (ArmorMeta)",
+    "lore": ["&7Demonstrates meta.type=armor"],
+    "meta": {
+      "type": "armor",
+      "trim": {
+        "material": "QUARTZ",
+        "pattern": "SENTRY"
+      }
+    },
+    "additionalInfo": {"cosmetic": "trim"}
+  },
+  {
+    "id": "example_compass_lodestone",
+    "referenceId": "omega:utility/lodestone_compass",
+    "material": "COMPASS",
+    "name": "&eLodestone Compass",
+    "lore": ["&7Demonstrates meta.type=compass"],
+    "meta": {
+      "type": "compass",
+      "lodestone": {"world": "world", "x": 100, "y": 64, "z": -50},
+      "lodestoneTracked": true
+    },
+    "additionalInfo": {"target": "spawn", "glow": true}
+  },
+  {
+    "id": "example_crossbow_loaded",
+    "referenceId": "omega:combat/loaded_crossbow",
+    "material": "CROSSBOW",
+    "name": "&6Loaded Crossbow",
+    "lore": ["&7Demonstrates meta.type=crossbow"],
+    "meta": {
+      "type": "crossbow",
+      "chargedProjectiles": ["ARROW", "FIREWORK_ROCKET"]
+    },
+    "additionalInfo": {"ammo": "mixed"}
+  },
+  {
+    "id": "example_speed_potion",
+    "referenceId": "omega:consumable/speed_potion",
+    "material": "POTION",
+    "name": "&bSpeed Potion (PotionMeta)",
+    "lore": ["&7Demonstrates basePotionData, customEffects, mainEffect"],
+    "meta": {
+      "type": "potion",
+      "basePotionData": {"type": "SPEED", "extended": true, "upgraded": false},
+      "color": {"r": 0, "g": 170, "b": 255},
+      "customEffects": [
+        {"type": "minecraft:speed", "duration": 600, "amplifier": 1, "ambient": false, "particles": true, "icon": true}
+      ],
+      "mainEffect": "SPEED"
+    },
+    "additionalInfo": {"effect": "speed"}
+  },
+  {
+    "id": "example_suspicious_stew",
+    "referenceId": "omega:consumable/suspicious_stew",
+    "material": "SUSPICIOUS_STEW",
+    "name": "&aSuspicious Stew",
+    "lore": ["&7Demonstrates meta.type=suspiciousstew"],
+    "meta": {
+      "type": "suspiciousstew",
+      "customEffects": [
+        {"type": "NIGHT_VISION", "duration": 200, "amplifier": 0}
+      ]
+    },
+    "additionalInfo": {"kitchen": "mushroom"}
+  },
+  {
+    "id": "example_player_head",
+    "referenceId": "omega:cosmetic/notch_head",
+    "material": "PLAYER_HEAD",
+    "name": "&fPlayer Head (SkullMeta)",
+    "lore": ["&7Demonstrates meta.type=skull"],
+    "meta": {
+      "type": "skull",
+      "owner": "Notch",
+      "noteBlockSound": "minecraft:banjo"
+    },
+    "additionalInfo": {"cosmetic": "head"}
+  },
+  {
+    "id": "example_creeper_spawn_egg",
+    "referenceId": "omega:mob/creeper_egg",
+    "material": "CREEPER_SPAWN_EGG",
+    "name": "&aCreeper Egg (SpawnEggMeta)",
+    "lore": ["&7Demonstrates meta.type=spawnegg"],
+    "meta": {
+      "type": "spawnegg",
+      "spawnedType": "CREEPER"
+    },
+    "additionalInfo": {"mob": "creeper"}
+  },
+  {
+    "id": "example_banner",
+    "referenceId": "omega:decor/banner",
+    "material": "WHITE_BANNER",
+    "name": "&fCustom Banner (BannerMeta)",
+    "lore": ["&7Demonstrates baseColor + patterns"],
+    "meta": {
+      "type": "banner",
+      "baseColor": "WHITE",
+      "patterns": [
+        {"color": "BLACK", "pattern": "CREEPER"},
+        {"color": "RED", "pattern": "STRIPE_MIDDLE"}
+      ]
+    },
+    "additionalInfo": {"decor": "banner"}
+  },
+  {
+    "id": "example_firework_rocket",
+    "referenceId": "omega:fun/firework_rocket",
+    "material": "FIREWORK_ROCKET",
+    "name": "&cFirework Rocket (FireworkMeta)",
+    "lore": ["&7Demonstrates meta.type=firework"],
+    "meta": {
+      "type": "firework",
+      "power": 2,
+      "effects": [
+        {"type": "STAR", "flicker": true, "trail": true, "colors": ["RED", "#00FF00"], "fadeColors": [{"r": 0, "g": 0, "b": 255}]}
+      ]
+    },
+    "additionalInfo": {"event": "celebration"}
+  },
+  {
+    "id": "example_firework_star",
+    "referenceId": "omega:fun/firework_star",
+    "material": "FIREWORK_STAR",
+    "name": "&dFirework Star (FireworkEffectMeta)",
+    "lore": ["&7Demonstrates meta.type=fireworkeffect"],
+    "meta": {
+      "type": "fireworkeffect",
+      "effect": {
+        "type": "BALL_LARGE",
+        "flicker": false,
+        "trail": true,
+        "colors": ["YELLOW", "AQUA"],
+        "fadeColors": ["WHITE"]
+      }
+    },
+    "additionalInfo": {"crafting": "star"}
+  },
+  {
+    "id": "example_axolotl_bucket",
+    "referenceId": "omega:pet/axolotl_bucket",
+    "material": "AXOLOTL_BUCKET",
+    "name": "&bAxolotl Bucket (AxolotlBucketMeta)",
+    "lore": ["&7Demonstrates meta.type=axolotlbucket"],
+    "meta": {
+      "type": "axolotlbucket",
+      "variant": "BLUE"
+    },
+    "additionalInfo": {"pet": "axolotl"}
+  },
+  {
+    "id": "example_tropical_fish_bucket",
+    "referenceId": "omega:pet/tropical_fish_bucket",
+    "material": "TROPICAL_FISH_BUCKET",
+    "name": "&bTropical Fish Bucket (TropicalFishBucketMeta)",
+    "lore": ["&7Demonstrates meta.type=tropicalfishbucket"],
+    "meta": {
+      "type": "tropicalfishbucket",
+      "bodyColor": "BLUE",
+      "patternColor": "YELLOW",
+      "pattern": "STRIPEY"
+    },
+    "additionalInfo": {"aquarium": "yes"}
+  },
+  {
+    "id": "example_filled_map",
+    "referenceId": "omega:utility/explorer_map",
+    "material": "FILLED_MAP",
+    "name": "&eExplorer Map (MapMeta)",
+    "lore": ["&7Demonstrates meta.type=map"],
+    "meta": {
+      "type": "map",
+      "mapId": 1,
+      "scaling": true,
+      "locationName": "Spawn",
+      "color": "#FFAA00"
+    },
+    "additionalInfo": {"poi": "spawn"}
+  },
+  {
+    "id": "example_blockdata",
+    "referenceId": "omega:block/oak_stairs_east",
+    "material": "OAK_STAIRS",
+    "name": "&6Configured Block Item (BlockDataMeta)",
+    "lore": ["&7Demonstrates meta.type=blockdata"],
+    "meta": {
+      "type": "blockdata",
+      "blockData": "minecraft:oak_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]"
+    },
+    "additionalInfo": {"block": "stairs"}
+  },
+  {
+    "id": "example_knowledge_book",
+    "referenceId": "omega:utility/knowledge_book",
+    "material": "KNOWLEDGE_BOOK",
+    "name": "&aKnowledge Book (KnowledgeBookMeta)",
+    "lore": ["&7Demonstrates meta.type=knowledgebook"],
+    "meta": {
+      "type": "knowledgebook",
+      "recipes": ["minecraft:iron_pickaxe", "minecraft:bread"]
+    },
+    "additionalInfo": {"unlock": "recipes"}
+  },
+  {
+    "id": "example_goat_horn",
+    "referenceId": "omega:fun/goat_horn_ponder",
+    "material": "GOAT_HORN",
+    "name": "&fGoat Horn (MusicInstrumentMeta)",
+    "lore": ["&7Demonstrates meta.type=musicinstrument"],
+    "meta": {
+      "type": "musicinstrument",
+      "instrument": "minecraft:ponder_goat_horn"
+    },
+    "additionalInfo": {"sound": "ponder"}
+  },
+  {
+    "id": "example_bundle",
+    "referenceId": "omega:placeholder/bundle",
+    "material": "BUNDLE",
+    "name": "&eBundle (BundleMeta)",
+    "lore": ["&7Bundle contents parsing not implemented yet"],
+    "meta": {
+      "type": "bundle"
+    },
+    "additionalInfo": {"status": "placeholder"}
+  },
+  {
+    "id": "example_shulker_box_blockstate",
+    "referenceId": "omega:placeholder/shulker_box",
+    "material": "SHULKER_BOX",
+    "name": "&dShulker Box (BlockStateMeta)",
+    "lore": ["&7BlockState parsing not implemented yet"],
+    "meta": {
+      "type": "blockstate"
+    },
+    "additionalInfo": {"status": "placeholder"}
+  }
+]

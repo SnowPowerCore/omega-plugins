@@ -1,0 +1,47 @@
+# --- Gradle / build outputs ---
+.gradle/
+**/.gradle/
+build/
+**/build/
+out/
+**/out/
+
+# Some modules may vendor a Gradle distribution for bootstrapping.
+**/.gradle-bootstrap/
+
+# Gradle cache / tooling
+**/.classpath
+**/.project
+**/.settings/
+
+# --- IntelliJ / Android Studio ---
+.idea/
+**/.idea/
+*.iml
+*.ipr
+*.iws
+
+# --- Eclipse ---
+.metadata/
+.recommenders/
+
+# --- VS Code ---
+.vscode/
+
+# --- OS / misc ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Logs ---
+*.log
+
+# --- Generated / local config ---
+**/bin/
+
+# --- Optional: if you use JDK toolchains locally ---
+.java-version
+
+# --- Ignore plugin runtime data folders (if ever checked into workspace) ---
+**/plugins/
+**/world/

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "starter_menu",
+    "type": "CHEST",
+    "size": 27,
+    "name": "&aStarter Menu",
+    "command": {
+      "name": "startermenu",
+      "permission": "omega.invholder.open.starter"
+    },
+    "items": [
+      {"slot": 10, "referenceId": "omega:welcome_book"},
+      {"slot": 12, "referenceId": "omega:demo/sword"},
+      {"slot": 14, "material": "DIAMOND", "amount": 3},
+      {"slot": 16, "material": "BARRIER", "amount": 1}
+    ]
+  },
+  {
+    "id": "example_anvil",
+    "type": "ANVIL",
+    "name": "&eExample Anvil",
+    "items": [
+      {"slot": 0, "material": "IRON_INGOT", "amount": 1},
+      {"slot": 1, "referenceId": "omega:welcome_book"}
+    ]
+  }
+]

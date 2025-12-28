@@ -1,0 +1,6 @@
+name: OmegaItemLoader
+main: com.omega.itemloader.plugin.OmegaItemLoaderPlugin
+version: 0.1.0
+api-version: "1.20"
+author: omega
+softdepend: [ProtocolLib]

@@ -1,0 +1,6 @@
+name: OmegaInvHolder
+main: com.omega.invholder.plugin.OmegaInvHolderPlugin
+version: 0.1.0
+api-version: "1.20"
+author: omega
+softdepend: [OmegaItemLoader]
